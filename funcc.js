@@ -6,7 +6,7 @@ button.addEventListener('click', () => {
         .then(response => {
       
             if (!response.ok) {
-                throw new Error('Сеть ответила с ошибкой: ' + response.status);
+                throw new Error('ERROR: ' + response.status);
             }
             return response.json(); // 
         })
